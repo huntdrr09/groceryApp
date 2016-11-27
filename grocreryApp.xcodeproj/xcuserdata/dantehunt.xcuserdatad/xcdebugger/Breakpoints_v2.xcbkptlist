@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "grocreryApp/AddListViewController.swift"
+            timestampString = "501920635.70367"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "AddListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocreryApp.AddListViewController.listNameField.setter : Swift.Optional&lt;__ObjC.UITextField&gt;"
+                  moduleName = "grocreryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dantehunt/Documents/grocreryApp/grocreryApp/AddListViewController.swift"
+                  timestampString = "501921547.935881"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocreryApp.AddListViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; grocreryApp.AddListViewController"
+                  moduleName = "grocreryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dantehunt/Documents/grocreryApp/grocreryApp/AddListViewController.swift"
+                  timestampString = "501921547.938127"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "grocreryApp.AddListViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;grocreryApp.AddListViewController&gt;"
+                  moduleName = "grocreryApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dantehunt/Documents/grocreryApp/grocreryApp/AddListViewController.swift"
+                  timestampString = "501921547.940314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
