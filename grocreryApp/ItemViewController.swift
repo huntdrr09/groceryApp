@@ -17,7 +17,7 @@ class ItemViewController: UIViewController, UITableViewDataSource, UITableViewDe
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        manager.itemDatas = manager.fetch()
+        manager.loadItemData()
         itemDataTableView?.reloadData()
     }
     
@@ -35,6 +35,21 @@ class ItemViewController: UIViewController, UITableViewDataSource, UITableViewDe
         cell.detailTextLabel?.text = "Quanity: \(item?.iQunaity ?? 0)"
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        if editingStyle == .delete {
+            let managerObject = manager.itemDatas.remove(at: indexPath.row)
+            context.delete(managerObject)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            do {
+                try context.save()
+            }
+            catch _ {
+                
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

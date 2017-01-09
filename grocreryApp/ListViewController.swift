@@ -11,14 +11,13 @@ import UIKit
 class ListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet var listDataTableView: UITableView?
-
     
     let manager = DataManager.shared
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        manager.listDatas = manager.fetch()
+        manager.loadListData()
         listDataTableView?.reloadData()
     }
     
@@ -33,9 +32,28 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let item = manager.getListData(from: indexPath)
         cell.textLabel?.text = item?.lName
-        cell.detailTextLabel?.text = "Item: \(item?.lNumber ?? 0)"
-        
+        cell.detailTextLabel?.text = item?.lDate
+
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        if editingStyle == .delete {
+            let managerObject = manager.listDatas.remove(at: indexPath.row)
+            context.delete(managerObject)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            do {
+               try context.save()
+            }
+            catch _ {
+            
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -43,7 +61,5 @@ class ListViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         manager.selectedListIndex = indexPath.row
     }
-
-
 }
 

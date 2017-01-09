@@ -19,10 +19,10 @@
 		8EF8224F1DE9F42600FDE893 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8224E1DE9F42600FDE893 /* AddItemViewController.swift */; };
 		8EF822511DE9F44400FDE893 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822501DE9F44400FDE893 /* ItemViewController.swift */; };
 		8EF822531DE9F7EF00FDE893 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822521DE9F7EF00FDE893 /* DataManager.swift */; };
-		8EF822551DE9F8C800FDE893 /* Data+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822541DE9F8C800FDE893 /* Data+CoreDataClass.swift */; };
-		8EF822571DE9F8F500FDE893 /* Data+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822561DE9F8F500FDE893 /* Data+CoreDataProperties.swift */; };
-		8EF822591DE9FAD000FDE893 /* DataItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822581DE9FAD000FDE893 /* DataItem+CoreDataClass.swift */; };
-		8EF8225B1DE9FAE100FDE893 /* DataItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF8225A1DE9FAE100FDE893 /* DataItem+CoreDataProperties.swift */; };
+		8EF822691DFE2BD200FDE893 /* ItemList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822651DFE2BD200FDE893 /* ItemList+CoreDataClass.swift */; };
+		8EF8226A1DFE2BD200FDE893 /* ItemList+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822661DFE2BD200FDE893 /* ItemList+CoreDataProperties.swift */; };
+		8EF8226B1DFE2BD200FDE893 /* ItemDetails+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822671DFE2BD200FDE893 /* ItemDetails+CoreDataClass.swift */; };
+		8EF8226C1DFE2BD200FDE893 /* ItemDetails+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF822681DFE2BD200FDE893 /* ItemDetails+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +40,11 @@
 		8EF8224E1DE9F42600FDE893 /* AddItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		8EF822501DE9F44400FDE893 /* ItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		8EF822521DE9F7EF00FDE893 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		8EF822541DE9F8C800FDE893 /* Data+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8EF822561DE9F8F500FDE893 /* Data+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		8EF822581DE9FAD000FDE893 /* DataItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataItem+CoreDataClass.swift"; sourceTree = "<group>"; };
-		8EF8225A1DE9FAE100FDE893 /* DataItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8EF822641DFE2B8C00FDE893 /* grocreryApp 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "grocreryApp 2.xcdatamodel"; sourceTree = "<group>"; };
+		8EF822651DFE2BD200FDE893 /* ItemList+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8EF822661DFE2BD200FDE893 /* ItemList+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemList+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8EF822671DFE2BD200FDE893 /* ItemDetails+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemDetails+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8EF822681DFE2BD200FDE893 /* ItemDetails+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemDetails+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,11 +93,11 @@
 		8EF822441DE9E56F00FDE893 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8EF822651DFE2BD200FDE893 /* ItemList+CoreDataClass.swift */,
+				8EF822661DFE2BD200FDE893 /* ItemList+CoreDataProperties.swift */,
+				8EF822671DFE2BD200FDE893 /* ItemDetails+CoreDataClass.swift */,
+				8EF822681DFE2BD200FDE893 /* ItemDetails+CoreDataProperties.swift */,
 				8EF822521DE9F7EF00FDE893 /* DataManager.swift */,
-				8EF822541DE9F8C800FDE893 /* Data+CoreDataClass.swift */,
-				8EF822581DE9FAD000FDE893 /* DataItem+CoreDataClass.swift */,
-				8EF822561DE9F8F500FDE893 /* Data+CoreDataProperties.swift */,
-				8EF8225A1DE9FAE100FDE893 /* DataItem+CoreDataProperties.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 				TargetAttributes = {
 					8EF8222B1DE9DE8300FDE893 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 4F8TQ67P8E;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -201,19 +203,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EF822591DE9FAD000FDE893 /* DataItem+CoreDataClass.swift in Sources */,
+				8EF8226C1DFE2BD200FDE893 /* ItemDetails+CoreDataProperties.swift in Sources */,
 				8EF822321DE9DE8300FDE893 /* ListViewController.swift in Sources */,
+				8EF8226A1DFE2BD200FDE893 /* ItemList+CoreDataProperties.swift in Sources */,
 				8EF822491DE9EF8300FDE893 /* UIViewController+Extension.swift in Sources */,
 				8EF822381DE9DE8300FDE893 /* grocreryApp.xcdatamodeld in Sources */,
 				8EF822511DE9F44400FDE893 /* ItemViewController.swift in Sources */,
+				8EF822691DFE2BD200FDE893 /* ItemList+CoreDataClass.swift in Sources */,
 				8EF822301DE9DE8300FDE893 /* AppDelegate.swift in Sources */,
-				8EF822571DE9F8F500FDE893 /* Data+CoreDataProperties.swift in Sources */,
-				8EF822551DE9F8C800FDE893 /* Data+CoreDataClass.swift in Sources */,
 				8EF8224B1DE9EF9E00FDE893 /* Array+Extension.swift in Sources */,
 				8EF8224F1DE9F42600FDE893 /* AddItemViewController.swift in Sources */,
 				8EF822531DE9F7EF00FDE893 /* DataManager.swift in Sources */,
-				8EF8225B1DE9FAE100FDE893 /* DataItem+CoreDataProperties.swift in Sources */,
 				8EF8224D1DE9F41700FDE893 /* AddListViewController.swift in Sources */,
+				8EF8226B1DFE2BD200FDE893 /* ItemDetails+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +338,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F8TQ67P8E;
 				INFOPLIST_FILE = grocreryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hunt.app.grocreryApp;
@@ -348,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4F8TQ67P8E;
 				INFOPLIST_FILE = grocreryApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hunt.app.grocreryApp;
@@ -383,6 +387,7 @@
 		8EF822361DE9DE8300FDE893 /* grocreryApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8EF822641DFE2B8C00FDE893 /* grocreryApp 2.xcdatamodel */,
 				8EF822371DE9DE8300FDE893 /* grocreryApp.xcdatamodel */,
 			);
 			currentVersion = 8EF822371DE9DE8300FDE893 /* grocreryApp.xcdatamodel */;

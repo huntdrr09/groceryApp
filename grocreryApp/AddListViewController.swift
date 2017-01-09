@@ -15,8 +15,10 @@ class AddListViewController: UIViewController {
     let manager = DataManager.shared
     
     @IBAction func add() {
-        try? manager.create(listNamed: listNameField?.text)
+        try? manager.createList(listNamed: listNameField?.text)
         dismiss(animated: UIView.areAnimationsEnabled, completion: nil)
     }
-
+    @IBAction func cancel() {
+        dismiss(animated: UIView.areAnimationsEnabled, completion: nil)
+    }
 }

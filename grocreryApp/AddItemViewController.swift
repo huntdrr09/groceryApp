@@ -17,7 +17,10 @@ class AddItemViewController: UIViewController {
     let manager = DataManager.shared
     
     @IBAction func add() {
-        try? manager.create(itemData: (iNameField?.text, iQuanField?.text?.integer ?? 0))
+        try? manager.createItem(itemData: (iNameField?.text, iQuanField?.text?.integer ?? 0))
+        dismiss(animated: UIView.areAnimationsEnabled, completion: nil)
+    }
+    @IBAction func cancel() {
         dismiss(animated: UIView.areAnimationsEnabled, completion: nil)
     }
 }
